@@ -36,12 +36,18 @@
     watch: {
       items: {
         handler: function (val) {
+
           if (val[val.length - 1].message.length > 0 ) {
             this.items.push({ message: '', id: val.length })
           } 
+
           if (val[val.length - 1].message.length === 0 && val.length - 2 >= 0 && val[val.length - 2].message.length === 0){
-            this.items.pop();
+            this.items.pop(); //I do not know why this if statement is nessesary, for somereason an extra linefeed is added
           }
+
+          if(val.length - 2 >= 0 && val[val.length - 2].message.charCodeAt(0) === 10) {
+            val[val.length - 2].message = '';
+          }          
         },
         deep: true
       }

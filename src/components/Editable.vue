@@ -1,9 +1,9 @@
 <template>
-  <p
+  <div
     ref="editable"
     contenteditable
     v-on="listeners"
-  />
+  ></div>
 </template>
 
 <script>
@@ -31,7 +31,7 @@ export default {
 </script>
 
 <style scoped>
-    p {
+    div {
         width: 100%;        
         word-break: break-all;
         text-align: start;
