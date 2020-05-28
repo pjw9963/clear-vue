@@ -3,13 +3,16 @@
         <h2>Cons</h2>
         <ul>      
           <li v-for="item in items" :key="item.id" >
-            <textarea rows="1" v-model="item.message" ></textarea>
+            <Editable v-model="item.message" ></Editable>
           </li>              
         </ul>
     </div>
 </template>
 
 <script>
+  import Editable from './Editable'
+
+
   let data = {
     items: [
       {
@@ -21,6 +24,9 @@
 
   export default {
     name: 'ConList',
+    components: {
+      Editable
+    },
     data: function() {
       return data;
     },
