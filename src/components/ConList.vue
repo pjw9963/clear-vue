@@ -3,7 +3,7 @@
         <h2>Cons</h2>
         <ul>      
           <li v-for="item in items" :key="item.id" >
-            <input type="text" v-model="item.message" />
+            <textarea rows="1" v-model="item.message" ></textarea>
           </li>              
         </ul>
     </div>
@@ -50,9 +50,14 @@
     text-align: center;
     min-height: 100vh;
   }
-  input {
+  textarea {
     outline:none;
     border: none;
     background-color: transparent;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: 10px;
+    resize: none;
   }  
 </style>
