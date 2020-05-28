@@ -1,5 +1,9 @@
 # clear-vue
 
+A simple vue front end for a pros and cons list. 
+I needed a _clear view_ of some of my priorities and a
+pros/cons list was the way to go.
+
 ## Project setup
 ```
 yarn install
