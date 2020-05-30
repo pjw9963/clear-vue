@@ -62,14 +62,8 @@
     text-align: center;
     min-height: 100vh;
   }
-  textarea {
-    outline:none;
-    border: none;
-    background-color: transparent;
-    padding: 0;
-    margin: 0;
-    position: relative;
-    top: 10px;
-    resize: none;
+  li {
+    font-size: 1.5rem;
+    padding: 1% 5%;
   }  
 </style>

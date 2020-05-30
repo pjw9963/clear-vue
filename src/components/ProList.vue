@@ -68,4 +68,8 @@ export default {
     border: none;
     background-color: transparent;
   }
+  li {
+    font-size: 1.5rem;
+    padding: 1% 5%;
+  }
 </style>
